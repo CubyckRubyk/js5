@@ -12,40 +12,340 @@
     // Все стірлочними!!!!!!!!!
     //     - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 
-    let arr = [1, 2, 10, 8];
-    function summ(array){
-        let item = 0;
-        for (let arrayElement of array) {
-            item += arrayElement;
-
-        }  return item/array.length;
-
-    }
-
-    console.log(summ (arr));
-
+    //
+    // let array = [1, 2, 3, 4, 5, 6, 100];
+    // let aver = (arr) => {
+    //     let sum = 0;
+    //     for (const arrElement of arr) {
+    //         sum += arrElement;
+    //     }  return sum/arr.length;
+    //         }
+    //         console.log (aver(array));
 
 
     // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+
+    // let array = [1, 2, 3, 4, 5, 6, 100];
+    // let foo = (arr) => {
+    //     let min = arr[0];
+    //     let max = arr[0];
+    //     for (const minElement of arr) {
+    //         if (min > minElement) {
+    //             min = minElement
+    //         }
+    //         if (max < minElement) {
+    //             max = minElement
+    //         }
+    //     }
+    //     console.log(max);
+    //     return min;
+    // }
+    // console.log(foo(array));
+    //
+    // let foo = (...arg) => {
+    //     let min = arg[0];
+    //     let max = arg[0];
+    //     for (const argElement of arg) {
+    //         if (min > argElement) {
+    //             min = argElement
+    //         }
+    //         if (max < argElement) {
+    //             max = argElement
+    //         }
+    //     }console.log(max);
+    //     return min;
+    // }
+    // console.log(foo(1, 12, 34, 5, 6, 7));
     // - створити функцію яка заповнює масив рандомними числами
-    // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+    // (цей код генерує  рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+
+    // let ran = () => {
+    //     let arr = [];
+    //     for (let i = 0; i < 100; i++) {
+    //
+    //         arr[i] = Math.round(Math.random()*100)
+    //     }
+    //     return arr;
+    // }
+    // console.log(ran());
+    //
+    // let random = () => {
+    //     let array = [];
+    //     for (let i = 0; i < 10; i++) {
+    //         array.push(Math.round(Math.random()*100));
+    //
+    //     } return array;
+    //    }
+    // console.log(random());
+
     // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+//
+//     let ran = (limit) => {
+// let array = [];
+//         for (let i = 0; i < limit; i++) {
+//
+//            array.push(Math.round(Math.random()*100));
+//
+//         } return array;
+//     }
+// console.log(ran(10));
+
     // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+    // let arr = [1, 2, 3, 4, 5]
+    //     arr.reverse(arr);
+    // console.log(arr);
+    //
+
+    // let arr = [1, 2, 3, 4, 5];
+    //      let rev = () => {
+    //         let arrRev = [];
+    //         for (let i = arr.length - 1; i >= 0; i--) {
+    //             arrRev.push(arr[i])
+    //             } return arrRev;
+    //     }
+    //     console.log(rev(arr));
+
+
+//     let arr = [1, 2, 3, 4, 5];
+//     let rev = () => {
+//         let arrRev = [];
+//         for (let i = arr.length - 1, j = 0; i >= 0; i--, j++) {
+//            // arrRev.push(arr[i])
+// arrRev[j] = arr[i];
+//         } return arrRev;
+//     }
+//     console.log(rev(arr));
+
+
+    // let arr = [1, 2, 3, 4, 5];
+    //     let rev = () => {
+    //         let arrRev = [];
+    //         for (let i = 0; i < arr.length; i++) {
+    //             arrRev.push(arr[arr.length - 1 - i]);
     //
     //
+    //         } return arrRev;
+    //     }
+    //     console.log(rev(arr));
+
+
+    // створити функцію, яка приймає масив з 2 об'єктами та міняє їх місцями
+// let arr = [
+//     {name: 'Ola',
+//     age: 20},
+//     {name: 'Olena',
+//         age: 22 }
+// ];
+// let changer = (array) => {
+//     let newarr = [];
+//     for (let i = 0; i < array.length; i++) {
+//         newarr.push(arr[array.length - 1 - i]);
+//     } return newarr;
+// }
+// console.log(changer(arr));
+
+
+    //
+    // let arr = [
+    //     {name: 'Ola',
+    //         age: 20},
+    //     {name: 'Olena',
+    //         age: 22 }
+    // ];
+    //
+    // let changer = (array) => {
+    //     let temp = array[0];
+    //     array[0] = array[1];
+    //     array[1] = temp;
+    //
+    //     return arr;
+    // }
+    // console.log(changer(arr));
+
+
+// debugger;
+//     let arr = [
+//         {name: 'Ola',
+//             age: 20},
+//         {name: 'Olena',
+//             age: 22 }
+//     ];
+//
+//     let changer = (array) => [array[0], array[1]] = [array[1], array[0]];
+//
+//     console.log(changer(arr));
+
     //     Переробити на стрілочні функції з попереднього дз
     // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
+
+   let scv = (a, b) => ((a + b) * 2);
+
+     console.log(scv(10, 20));
+
+
     // - створити функцію яка обчислює та повертає площу кола з радіусом r
+
+    let scvcircle = (a) => ((Math.pow(a, 2)) * 3.14);
+
+    console.log(scvcircle (10));
+
+
     // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
+
+
+    let scvcirc = (r, h) => ((2 * 3.14 * r) *(r + h));
+
+    console.log(scvcirc(3, 4));
+
+
     // - створити функцію яка приймає масив та виводить кожен його елемент
+    let iterator = (array) => {
+       for (const arrayElement of array) {
+            console.log(arrayElement);
+
+        } }
+     let users = [1, 2, 3, 4, 5, 6, 7];
+     iterator(users);
+
+    let data = (array) => {
+        for (const item of array) {
+            console.log(item);
+        }
+    }
+
+    data(users);
+
+
     // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
+
+     let enterText = (text) => {
+       console.log(text)
+     document.write(text)
+     }
+     enterText('lorem');
+
+     let text = (text) => document.write(`<p>${text}</p>`);
+
+text('hello');
     // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+
+    let listCreator = (item) => {
+        document.write(`<ul>`);
+        for (let i=0; i < 3; i++) {
+            document.write(`<li>${item} </li>`);
+        }  document.write(`</ul>`);
+    }
+    listCreator('hello');
+
+    let list = (form) => document.write(`<ul><li>${form}</li><li>${form}</li><li>${form}</li></ul>`);
+    list('jsjsjs')
+
+
+
+
     // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+    let listCreation = (a, size) =>
+    {
+        document.write(`<ul>`);
+        for (let i = 0; i < size; i++) {
+            document.write(`<li> ${a} </li>`);
+        } document.write(`</ul>`);
+    }
+    listCreation('texxxxt', 7);
+
+    let listCreat = (a) =>
+    {
+        document.write(`<ul>`);
+        for (let i = 0; i < a.length; i++) {
+            document.write(`<li> ${a} </li>`);
+        } document.write(`</ul>`);
+    }
+    listCreat('text');
+
+
     // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+
+    let array = [1, 2, 3, 'text', true];
+    let arrlist = (arr) =>
+    { document.write(`<ul>`)
+        for (let i = 0; i < arr.length; i++) {
+            let arrElement;
+            arrElement = arr[i];
+            document.write( `<li> ${arrElement } </li>`)
+        }
+        document.write(`</ul>`);
+    }
+     arrlist(array);
+
+    let arli = (ar) =>
+    { document.write(`<ul>`)
+        for (const item of ar) {
+            document.write(`<li>${item}</li>`)
+        }
+        document.write(`</ul>`);
+    }
+    arli (array);
+
+
     // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+
+    let list1 = [
+        {
+            id:1,
+            name: 'Alex',
+            age: 21
+        },
+        {
+            id: 2,
+            name: 'Ann',
+            age: 25
+        },
+        {
+            id: 3,
+            name: 'Add',
+            age: 24
+        },
+    ]
+    let print = (l) =>
+    {
+        for (const lElement of l) {
+            document.write(`<div>${lElement.id} ${lElement.name} ${lElement.age}</div>`)
+        }
+    }
+    print (list1);
+
+
     // - створити функцію яка повертає найменьше число з масиву
+
+    let arr3 = [1, 2, 11, -3];
+    let sm = (array) =>
+    { let min = array[0];
+        for (const item of array) {
+            if (item < min) {
+                min = item;
+            }
+
+    } return min;}
+    console.log(sm(arr3));
+
+
+
+
     // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
     //
+    let arr = [1,2,10];
+   let sum = (array) => {
+        let item = 0;
+        for (let i = 0; i < array.length; i++) {
+            item += array[i];
+
+        } return item;
+    }
+
+    console.log(sum (arr));
+
+
+
     // -створити функцію, яка приймає масив з 2х об'єктів, та міняє їх місцями.
 
 </script>
